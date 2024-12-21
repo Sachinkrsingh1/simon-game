@@ -1,38 +1,85 @@
 body {
-text-align: center;
+  text-align: center;
 }
 .btn {
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
-    border: 10px solid black;
-    margin: 2.5rem;
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  border: 10px solid black;
+  margin: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .btn-container {
-    display: flex;
-    justify-content: center;
-
-
+  display: flex;
+  justify-content: center;
 }
 .yellow {
-    background-color: #f99b45;
+  background-color: #f99b45;
 }
 .red {
-    background-color: #d95980;
+  background-color: #d95980;
 }
-.green{
-    background-color:#63aac0 ;
+.green {
+  background-color: #63aac0;
 }
-.blue{
-    background-color:#819ff9 ;
+.blue {
+  background-color: #819ff9;
 }
-.flash{
-    background-color: white;
+.flash {
+  background-color: white;
+  color: black;
+  transition: all ease 0.5s;
 }
-.userflash{
-    background-color: green;
+.userflash {
+  background-color: green;
 }
-.gameover{
-    background-color: rgba(255, 0, 0, 0.881);
+.gameover {
+  background-color: rgba(255, 0, 0, 0.881);
+}
+@media screen and (max-width: 767px) {
+  .btn {
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn {
+    height: 160px;
+    width: 160px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .btn {
+    height: 120px;
+    width: 120px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-size: 1rem;
+  }
 }
